@@ -1,0 +1,28 @@
+{
+  "name": "exchangesdata",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "@types/node": "^13.11.1",
+    "nodemon": "^2.0.3",
+    "ts-node": "^8.8.2",
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start-dev": "nodemon --config \"./util/nodemon.json\"/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joraanbe82/exchangesData.git"
+  },
+  "author": "Jose Barbancho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joraanbe82/exchangesData/issues"
+  },
+  "homepage": "https://github.com/joraanbe82/exchangesData#readme"
+}
