@@ -1,5 +1,6 @@
 
 # general
+# like this every file you create/rename prefixing gitignore won't be added to git
 gitignore*
 
 # dependencies
