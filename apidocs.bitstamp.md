@@ -1,5 +1,25 @@
 ### For further documentation refer to: https://www.bitstamp.net/api/
 
+# Public Methods
+
+## Trading pairs info
+
+- Request
+
+GET https://www.bitstamp.net/api/v2/trading-pairs-info/ => Postman! curl not working... why?
+
+- Response (JSON) - list of trading pairs. Every trading pair dictionary contains:
+
+name - Trading pair.
+url_symbol - URL symbol of trading pair.
+base_decimals - Decimal precision for base currency (BTC/USD - base: BTC).
+counter_decimals - Decimal precision for counter currency (BTC/USD - counter: USD).
+minimum_order - Minimum order size.
+trading - Trading engine status (Enabled/Disabled).
+description - Trading pair description.
+
+# Private Methods
+
 ## V2 authentication method
 
 We introduced a new authentication method that allows for easier nonce handling and is much safer since all relevant content is signed.
@@ -63,7 +83,7 @@ X-Auth-Timestamp - Same as authorization header.
 
 X-Auth-Version - Same as authorization header.
 
-request.body As is.
+request.body - As is.
 
 ### PYTHON example
 

@@ -28,7 +28,7 @@ currencyPair - The major and minor currency that define this market. (or 'all' f
 
 - Output Fields
 
-Field - Description
+Field Description
 globalTradeID - The globally unique identifier of this trade.
 tradeID - The identifier of this trade unique only within this trading pair.
 date - The UTC date at which this trade executed.
@@ -41,6 +41,35 @@ type - Denotes a 'buy' or a 'sell' execution.
 category - Denotes if this was a standard or margin exchange.
 
 Note: set the nonce to the current milliseconds. For example: date +%s00000
+
+{ pair: [
+{
+globalTradeID: 394700861,
+tradeID: 45210354,
+date: '2018-10-23 18:01:58',
+type: 'buy',
+rate: '0.03117266',
+amount: '0.00000652',
+total: '0.00000020',
+orderNumber: '104768235093'
+},
+],
+...
+}
+
+DBelementProposal
+{{
+market: enum=['bitstamp','poloniex',...]
+pair: enum=['btc_eur','btc_eth',...] => needed to check which order trade pairs have? NO! always main currency first => https://docs.poloniex.com/#currency-pair-ids , 20200416 available bitstamp (GET https://www.bitstamp.net/api/v2/trading-pairs-info/): ["BTC/USD","BTC/EUR","EUR/USD","XRP/USD","XRP/EUR","XRP/BTC","LTC/USD","LTC/EUR","LTC/EUR","ETH/USD","ETH/EUR","ETH/BTC","BCH/USD","BCH/EUR","BCH/BTC"] (tot: 15 pairs)
+date: Date(correspondingAPIFormat).toISOString(),
+globalTradeID: 394700861,
+tradeID: 45210354,
+type: enum=['buy', 'sell'], => Deposits, withdrawals, margins and otheres are dismissed for now.
+rate: '0.03117266',
+amount: '0.00000652',
+total: '0.00000020',
+orderNumber: '104768235093'
+}
 
 ### example
 
