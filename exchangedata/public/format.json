@@ -1,0 +1,55 @@
+[
+  {
+    "exchange": "bitstamp",
+    "Type": "Deposit",
+    "Datetime": "Oct. 23, 2017, 08:00 AM",
+    "Account": "Main Account",
+    "Amount": "1200.00 EUR",
+    "Value": "",
+    "Rate": "",
+    "Fee": "",
+    "Sub Type": ""
+  },
+
+  {
+    "exchange": "poloniex",
+    "Date": "2019-08-28 07:56:53",
+    "Market": "BCHABC/BTC",
+    "Category": "Exchange",
+    "Type": "Sell",
+    "Price": 0.03035079,
+    "Amount": 0.10026972,
+    "Total": 0.00304326,
+    "Fee": "0.15%",
+    "Order Number": 78625774757,
+    "Base Total Less Fee": 0.00303869,
+    "Quote Total Less Fee": -0.10026972
+  },
+
+  {
+    "exchange": "hitbtc",
+    "Date (+02)": "2019-09-18 16:35:17",
+    "Instrument": "ENJ/BTC",
+    "Trade ID": 667374803,
+    "Order ID": 162550702036,
+    "Side": "sell",
+    "Quantity": 3959,
+    "Price": 0.0000072918,
+    "Volume": 0.028868236,
+    "Fee": 0.000020208,
+    "Rebate": 0,
+    "Total": 0.028848028
+  },
+
+  {
+    "exchange": "bitfinex",
+    "#": 413306391,
+    "PAIR": "LTC/BTC",
+    "AMOUNT": -0.99800944,
+    "PRICE": 0.0075863,
+    "FEE": -0.00000757,
+    "FEE CURRENCY": "BTC",
+    "DATE": "01-02-20 09:35:33",
+    "ORDER ID": 38577641587
+  }
+]
